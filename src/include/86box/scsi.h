@@ -49,5 +49,8 @@ extern void            scsi_card_init(void);
 
 extern void            scsi_bus_set_speed(uint8_t bus, double speed);
 extern double          scsi_bus_get_speed(uint8_t bus);
+#ifdef EMU_DEVICE_H
+extern const device_t scsi_st01_device;
+#endif
 
 #endif /*EMU_SCSI_H*/
